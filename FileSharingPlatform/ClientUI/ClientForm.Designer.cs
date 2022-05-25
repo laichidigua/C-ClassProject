@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_search = new System.Windows.Forms.Button();
-            this.btn_upload = new System.Windows.Forms.Button();
-            this.btn_download = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_download = new System.Windows.Forms.Button();
+            this.btn_upload = new System.Windows.Forms.Button();
+            this.btn_search = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tree_file = new System.Windows.Forms.TreeView();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -56,24 +56,12 @@
             this.panel1.Size = new System.Drawing.Size(800, 77);
             this.panel1.TabIndex = 0;
             // 
-            // btn_search
+            // textBox1
             // 
-            this.btn_search.Location = new System.Drawing.Point(60, 25);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(94, 29);
-            this.btn_search.TabIndex = 0;
-            this.btn_search.Text = "搜索";
-            this.btn_search.UseVisualStyleBackColor = true;
-            // 
-            // btn_upload
-            // 
-            this.btn_upload.AutoSize = true;
-            this.btn_upload.Location = new System.Drawing.Point(513, 27);
-            this.btn_upload.Name = "btn_upload";
-            this.btn_upload.Size = new System.Drawing.Size(91, 30);
-            this.btn_upload.TabIndex = 1;
-            this.btn_upload.Text = "上传";
-            this.btn_upload.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(188, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.TabIndex = 3;
             // 
             // btn_download
             // 
@@ -84,13 +72,28 @@
             this.btn_download.TabIndex = 2;
             this.btn_download.Text = "下载";
             this.btn_download.UseVisualStyleBackColor = true;
+            this.btn_download.Click += new System.EventHandler(this.btn_download_Click);
             // 
-            // textBox1
+            // btn_upload
             // 
-            this.textBox1.Location = new System.Drawing.Point(188, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 3;
+            this.btn_upload.AutoSize = true;
+            this.btn_upload.Location = new System.Drawing.Point(513, 27);
+            this.btn_upload.Name = "btn_upload";
+            this.btn_upload.Size = new System.Drawing.Size(91, 30);
+            this.btn_upload.TabIndex = 1;
+            this.btn_upload.Text = "上传";
+            this.btn_upload.UseVisualStyleBackColor = true;
+            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
+            // 
+            // btn_search
+            // 
+            this.btn_search.Location = new System.Drawing.Point(60, 25);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(94, 29);
+            this.btn_search.TabIndex = 0;
+            this.btn_search.Text = "搜索";
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // panel2
             // 
@@ -104,12 +107,13 @@
             // 
             // tree_file
             // 
-            this.tree_file.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tree_file.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.tree_file.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tree_file.Location = new System.Drawing.Point(0, 0);
             this.tree_file.Name = "tree_file";
             this.tree_file.Size = new System.Drawing.Size(250, 373);
             this.tree_file.TabIndex = 0;
+            this.tree_file.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tree_file_AfterSelect);
             // 
             // panel3
             // 

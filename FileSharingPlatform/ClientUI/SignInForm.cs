@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ClientClasses;
 namespace ClientUI
 {
     public partial class SignInForm : Form
@@ -15,6 +15,21 @@ namespace ClientUI
         public SignInForm()
         {
             InitializeComponent();
+        }
+
+        //点击登录
+        //判断账号密码是否正确，再根据id构建客户端窗口
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            if (MysqlConnector.IsPasswordRight(ID.Text, password.Text))
+            {
+                new ClientForm(ID.Text).ShowDialog();
+                this.Close();
+            }
+            else {
+                //new FontDialog("无此账户或密码错误").ShowDialog();
+            }
+
         }
     }
 }

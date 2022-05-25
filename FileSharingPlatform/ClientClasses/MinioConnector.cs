@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClientClasses
 {
-    internal class MinioConnector
+    public class MinioConnector
     {
         public static bool creatBucket(string ID)
         {
@@ -21,12 +21,13 @@ namespace ClientClasses
         public static bool addFile(string ID, string localFilePath, string targetPath) {
             //找到桶，结合指定路径和本地文件路径，添加文件
             return true;
+
         }
         public static bool deleteFile(string ID, string targetPath) {
             //找到桶，根据指定文件路径，删除文件
             return true;
         }
-        public static Task getFile(string ID, string targetPath) { 
+        public static void getFile(string ID, string targetPath,string savepath) { 
            //找到桶，根据指定文件路径，传回下载文件的Task
         }
     }

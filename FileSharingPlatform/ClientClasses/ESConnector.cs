@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClientClasses
 {
-    internal class ESConnector
+    public class ESConnector
     {
         public static bool creatItem(FileItem fileItem) {
             //解析fileItem字段，生成json语句，通过api存入ES

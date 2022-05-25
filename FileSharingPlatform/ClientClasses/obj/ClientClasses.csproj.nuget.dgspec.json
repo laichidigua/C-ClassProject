@@ -39,6 +39,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "MySql.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
