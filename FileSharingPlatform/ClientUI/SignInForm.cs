@@ -23,8 +23,8 @@ namespace ClientUI
         {
             if (MysqlConnector.IsPasswordRight(ID.Text, password.Text))
             {
-                new ClientForm(ID.Text).ShowDialog();
-                this.Close();
+                this.Visible = false;
+                new ClientForm(txt_ID.Text).ShowDialog();
             }
             else {
                 //new FontDialog("无此账户或密码错误").ShowDialog();

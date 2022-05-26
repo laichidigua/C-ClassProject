@@ -11,6 +11,7 @@ namespace ClientUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            //Application.Run(new ClientForm("123"));
             Application.Run(new SignInForm());
         }
     }

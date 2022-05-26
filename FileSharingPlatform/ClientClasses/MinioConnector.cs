@@ -27,7 +27,7 @@ namespace ClientClasses
             //找到桶，根据指定文件路径，删除文件
             return true;
         }
-        public static void getFile(string ID, string targetPath,string savepath) { 
+        public static Task getFile(string ID, string targetPath,string savepath) { 
            //找到桶，根据指定文件路径，传回下载文件的Task
         }
     }
