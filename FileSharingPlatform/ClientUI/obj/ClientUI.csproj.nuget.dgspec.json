@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientUI\\ClientUI.csproj": {}
+    "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientUI\\ClientUI.csproj": {}
   },
   "projects": {
-    "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj": {
+    "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj",
+        "projectUniqueName": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj",
         "projectName": "ClientClasses",
-        "projectPath": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj",
-        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientClasses\\obj\\",
+        "projectPath": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj",
+        "packagesPath": "C:\\Users\\赵颖\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\赵颖\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Minio": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientUI\\ClientUI.csproj": {
+    "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientUI\\ClientUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientUI\\ClientUI.csproj",
+        "projectUniqueName": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientUI\\ClientUI.csproj",
         "projectName": "ClientUI",
-        "projectPath": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientUI\\ClientUI.csproj",
-        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientUI\\obj\\",
+        "projectPath": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientUI\\ClientUI.csproj",
+        "packagesPath": "C:\\Users\\赵颖\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\赵颖\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +88,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj": {
-                "projectPath": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj"
+              "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj": {
+                "projectPath": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\ClientClasses\\ClientClasses.csproj"
               }
             }
           }
@@ -97,6 +103,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Minio": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -115,7 +127,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

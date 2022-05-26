@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Minio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,9 @@ namespace ClientClasses
         public string Name { get; set; }
         public string Password { get; set; }
 
+        public MinioClient Minio { get; set; }
+        
+
         Client() {
             Id = Guid.NewGuid().ToString();
         }
@@ -21,6 +25,9 @@ namespace ClientClasses
         {
             Name = name;
             Password = password;
+            Minio = new MinioClient()
+                .WithEndpoint("")
+                .WithCredentials(Name, Password);
             //为用户建桶
             //将用户信息存入数据库
         }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\MinioConnector\\MinioConnector.csproj": {}
+    "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\MinioConnector\\MinioConnector.csproj": {}
   },
   "projects": {
-    "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\MinioConnector\\MinioConnector.csproj": {
+    "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\MinioConnector\\MinioConnector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\MinioConnector\\MinioConnector.csproj",
+        "projectUniqueName": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\MinioConnector\\MinioConnector.csproj",
         "projectName": "MinioConnector",
-        "projectPath": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\MinioConnector\\MinioConnector.csproj",
-        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "D:\\2 git本地仓库\\软件构造基础\\CSharpClassProject\\FileSharingPlatform\\MinioConnector\\obj\\",
+        "projectPath": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\MinioConnector\\MinioConnector.csproj",
+        "packagesPath": "C:\\Users\\赵颖\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\赵颖\\source\\repos\\FileSharePlatform\\FileSharingPlatform\\MinioConnector\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\赵颖\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
