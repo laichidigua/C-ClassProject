@@ -46,6 +46,7 @@ namespace FileSharing.ESService
                     .Field(d => d.Description)
                     .Field(a => a.Name)
                     .Field(c=>c.Subject))
+                  
                     .Query(context)
                     ) && q.Bool(aa => aa.Must(
                             bb => bb.Term(pp=>pp.IsPrivate,false),

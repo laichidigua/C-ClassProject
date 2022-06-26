@@ -26,7 +26,7 @@ namespace FileSharing.Controllers
             ESService.ESService.getConnection();
             
             //下载，将对应文件下载量++
-            ESService.ESService.downloadFileItem(content.Id,content.destPath);
+          
             var file= ESService.ESService.getFileItemByClientIdAndPath(content.Id, content.destPath);
             if (file != null) {
                 if (file.IsReference)
@@ -38,10 +38,10 @@ namespace FileSharing.Controllers
                 }
                 else { content.Password = ESService.ESService.findClientPasswordById(content.Id); }
             }
-            
-            
 
-            
+            ESService.ESService.downloadFileItem(content.Id, content.destPath);
+
+
             MinioClient client = new MinioClient().WithEndpoint("127.0.0.1:9000").WithCredentials(content.Id, content.Password)
                 .Build();
             try
@@ -78,8 +78,8 @@ namespace FileSharing.Controllers
                     MinioService.MinioService.uploadFile(client,content.Id,content.destPath, ms).Wait();
                 }
                 //ES存入相应条目
-                ESService.ESService.uploadFileItem(content.Id,content.dictionarypath,content.name,content.description,content.isprivate,content.subject,length);
-                return true;
+               return ESService.ESService.uploadFileItem(content.Id,content.dictionarypath,content.name,content.description,content.isprivate,content.subject,length);
+               // return true;
             }
             catch (Exception e)
             {

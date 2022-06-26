@@ -49,11 +49,13 @@ namespace FileSharingWinform
 
             using (FileStream fs = new FileStream(fileitem.Name, FileMode.Create))
             {
+                result.Seek(0, SeekOrigin.Begin);
                 result.CopyTo(fs);
                 fs.Flush();
                 MessageBox.Show("下载成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                
             }
+            return;
             MessageBox.Show("下载失败", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
