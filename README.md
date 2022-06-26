@@ -14,4 +14,6 @@ ES server、两个模板类（FileItem,Client）：康沛森
 
 MiniO server ，测试上传下载功能:赵颖
 
+项目的架构：赵颖、康沛森
+
 更详尽的叙述在各个成员的实验报告中有描述
